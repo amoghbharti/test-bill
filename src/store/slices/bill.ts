@@ -7,11 +7,9 @@ const billSlice = createSlice({
   },
   reducers: {
     billList: (state) => {},
-    billDetail: (state) => {
-      state.value -= 1;
-    },
+    billDetail: (state) => {},
   },
 });
 
-export default billSlice;
+export default billSlice.reducer;
 export const { billList, billDetail } = billSlice.actions;
